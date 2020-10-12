@@ -1,0 +1,312 @@
+.servicios div h3, .proyecto div h3, .contactos div h3, .empresa div h3 {
+  margin: 20px 20px 20px 0px;
+  padding: 2px 0px;
+  text-align: left;
+}
+
+.servicios, .proyecto, .contactos, .empresa {
+  background-color: white;
+  font-size: 1.4rem;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 84.719px;
+  background-color: #212529;
+}
+.navbar .navbar__menu .navbar__menulista .navbar__menulink {
+  color: #fff;
+  border-bottom-color: #e84855;
+  border-bottom: 4px solid transparent;
+  transition: border 0.3s ease;
+}
+.navbar .navbar__menu .navbar__menulista .navbar__menulink:hover {
+  border-bottom-color: #e84855;
+}
+.navbar .navbar__menu .navbar__menulista .navbar__menulink .active {
+  border-bottom-color: #e84855;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+html body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  color: #212529;
+  font-family: "Libre Baskerville", serif;
+}
+
+h3 {
+  color: #771E19;
+  font-family: "Libre Baskerville", serif;
+}
+
+p {
+  color: #212529;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #212529;
+}
+footer .foot {
+  display: flex;
+  flex-direction: column;
+}
+footer .foot p {
+  align-self: center;
+  color: #771E19;
+}
+
+/* Index */
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: slide 20s infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("../img/index/mercedez13.jpg");
+  }
+  20% {
+    background-image: url("../img/index/mercedez13.jpg");
+  }
+  25% {
+    background-image: url("../img/index/megafutbol.jpg");
+  }
+  45% {
+    background-image: url("../img/index/megafutbol.jpg");
+  }
+  50% {
+    background-image: url("../img/index/ferreteria.jpg");
+  }
+  70% {
+    background-image: url("../img/index/ferreteria.jpg");
+  }
+  75% {
+    background-image: url("../img/index/pizarra.jpg");
+  }
+  100% {
+    background-image: url("../img/index/pizarra.jpg");
+  }
+}
+header ul {
+  display: flex;
+  justify-content: center;
+}
+header ul li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+header nav ul li {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+header nav ul li a {
+  color: #fff;
+  border-bottom-color: #e84855;
+  border-bottom: 5px solid transparent;
+}
+header nav ul li a.active {
+  border-bottom-color: #e84855;
+}
+
+.principal {
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, 100%);
+  position: absolute;
+  text-align: center;
+  padding: 15px 10px;
+  border: ridge 3px #212529;
+  background-color: rgba(19, 18, 18, 0.753);
+}
+.principal .principal1 {
+  margin: 3px;
+  padding: 3px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contenedorlink {
+  background-color: #e6201679;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.contenedorlink .link1 {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.contenedorlink.contenedorlink:hover {
+  transform: scale(0.8);
+  background-color: #e6201649;
+}
+
+.marca {
+  justify-items: center;
+  align-items: center;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -75%);
+  position: absolute;
+  width: 50vh;
+}
+
+.marca2 {
+  height: 2rem;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+/* Empresa */
+.empresa img {
+  padding: 3px 5px;
+}
+
+/* Proyectos */
+.proyecto img, .contactos img {
+  padding: 3px 3px;
+  overflow: hidden;
+}
+
+
+/* Servicios */
+.mensaje {
+  display: flex;
+}
+
+textarea, input {
+  margin: 0px 0px 0px 15px;
+}
+
+form {
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgba(19, 18, 18, 0.185);
+}
+
+/* Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: black;
+}
+footer .foot p {
+  align-self: center;
+}
+
+/*Grilla galeria */
+.galeria {
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  grid-gap: 10px;
+}
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.contenedor3 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor3 .boton {
+  font-size: 1.2rem;
+  align-self: center;
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 20px;
+  background-color: #771e19c7;
+  color: #fff;
+}
+/* Contactos */
+/*Encargado */
+.contenedor-encargado {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: rgba(19, 18, 18, 0.185); 
+}
+.contenedor-encargado .img-encargado {
+  border-radius: 50%;
+  width: 14rem;
+  text-align: center;
+}
+.contenedor-encargado h4 {
+  padding-top: 5px;
+}
+.contenedor-encargado .redes {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-encargado .redes li {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+li {
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.contenedor-contacto{
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 3rem;
+  text-align: center;
+  background-color: rgba(19, 18, 18, 0.185);
+}
+
+html {
+    
+    -webkit-text-size-adjust: 0;
+     
+}
